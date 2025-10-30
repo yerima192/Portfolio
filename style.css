@@ -315,14 +315,19 @@ main {
     width: 95%;
     margin: auto;
     font-weight: 700;
-    transition: border-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
-
+    border: 2px solid transparent;
+    transition:
+        border-color 0.5s ease,
+        transform 0.5s ease,
+        box-shadow 0.5s ease,
+        background-color 0.5s ease;
 }
 
 .trios:hover {
-    border: solid #f49818 2px;
-    transform: scale(1.01);
-    box-shadow: 0 6px 20px #f49818(120, 115, 245, 0.15);
+    border-color: #f49818; 
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(244, 152, 24, 0.3);
+    background-color: #2f3655;
 }
 
 .dev {
